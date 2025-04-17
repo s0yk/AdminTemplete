@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* input Custom */
+input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+input[type="month"]::-webkit-calendar-picker-indicator,
+input[type="week"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url(../../images/ico/ico_calendar.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 16px;
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background-image: url(../../images/ico/ico_clock.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 16px;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    appearance: none;
+	-webkit-appearance: none;
+}
+input[type=search]::-webkit-search-cancel-button {
+	width: 16px; height: 16px;
+	background-image: url(../../images/ico/ico_close_black.svg);
+    background-repeat: no-repeat;
+	background-position: 100% 50%;
+    background-size: 16px;
+}
+input[type="checkbox"] {
+    display: inline-block;
+	margin: 0;
+    border: 1px solid var(--gray-sec);
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+input[type="checkbox"]:checked {
+    border: 1px solid transparent;
+    background: var(--pri) url(../../images/ico/ico_checkbox_checked.svg) no-repeat center;
+}
+input[type="radio"] {
+    display: inline-flex;
+	margin: 0;
+    border: 1px solid var(--gray-sec);
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+input[type="radio"]:checked {
+    border: none;
+    background-color: var(--pri);
+}
+input[type="checkbox"]:disabled:checked,
+input[type="radio"]:disabled:checked {
+	opacity: .5;
+	cursor: default;
+}
+input[type="radio"]::after {
+    display: none;
+    margin: -5px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--sec);
+    content: '';
+    border-radius: 50%;
+}
+input[type="radio"]:checked::after {
+    display: block;
+    box-sizing: initial;
+}
+.form-wrap .form-group .form-control:disabled,
+.form-wrap .form-group .form-control[readonly] {
+	background-color: #dbdfeb;
+}

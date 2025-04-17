@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="title" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <meta name="image" content="" />
+        <title>Component | Admin System</title>
+        <link rel="stylesheet" href="../resources/css/reset.css">
+        <link rel="icon" href="./images/ico/favicon.ico">
+
+        <style>
+            #wrap {
+                position: relative;
+                width: 100%; height: 100vh;
+                background-color: #f1f9ff;
+            }
+            .error-conts {
+                display: flex;
+                gap: 24px;
+                align-items: center;
+                flex-direction: column;
+                padding: 64px 160px;
+                box-shadow: 0 0 4px rgba(0, 0, 0, 0.07);
+                position: absolute; top: 30%;
+                left: 50%;
+                background-color: #fff;
+                transform: translateX(-50%);
+                border-radius: 4px;
+            }
+            .error-conts .error-tit {
+                font-size: 120px;
+                color: var(--pri);
+            }
+            .error-conts .error-desc {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .error-conts .error-button {
+                padding: 12px 24px;
+                background-color: var(--sec);
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <!-- wrap -->
+        <div id="wrap">
+            <div class="error-conts">
+                <h2 class="error-tit">404</h2>
+                <b class="error-desc">Ooops! Something went wrong.</b>
+                <a href="javascript:history.back()" class="error-button">Back to Dashboard</a>
+            </div>
+        </div>
+    </body>
+</html>
